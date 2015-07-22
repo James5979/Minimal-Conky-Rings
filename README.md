@@ -7,9 +7,10 @@ Example:
 
 # Installation
 
-Move the hidden .conkyrc file to your home folder, and the hidden
-.conky directory to the same location. Make sure that you have Lm
-sensors installed and configured.
+Move the hidden .conkyrc file to your home folder and the hidden
+.conky directory to the same location.
+
+Make sure that you have Lm sensors installed and configured.
 
 In Debian:
 
@@ -19,7 +20,7 @@ In Debian:
 You may wish to read the comments in the script rings.lua, as you
 may need to make some small adjustments to the file. For example:
 you may need to change the wireless interface to whatever interface
-your wireless uses.
+your wireless card uses.
 
 Now you can launch Conky normally by typing 'conky &' into your
 terminal window.
@@ -30,7 +31,7 @@ be done the following way:
         killall conky; conky &
 
 You may need to give permissions to Conky in order for the 'WIFI'
-meter to work. On Debian, (or possibly other distros), this can be
+meter to work. On Debian (or possibly other distros), this can be
 done by executing the following command:
 
         sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/conky
