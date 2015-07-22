@@ -7,12 +7,25 @@ Example:
 
 # Installation
 
-Move the hidden .conkyrc file to the usual location in your home
-folder, and the hidden .conky directory to the same location. Now
-launch Conky normally by typing 'conky &' into your terminal.
+Move the hidden .conkyrc file to your home folder, and the hidden
+.conky directory to the same location. Make sure that you have Lm
+sensors installed and configured.
+
+In Debian:
+
+        sudo apt-get install lm-sensors
+        sudo sensors-detect
+
+You may wish to read the comments in the script rings.lua, as you
+may need to make some small adjustments to the file. For example:
+you may need to change the wireless interface to whatever interface
+your wireless uses.
+
+Now you can launch Conky normally by typing 'conky &' into your
+terminal window.
 
 Due to the rings.lua script, if you need to restart Conky, it should
-be done in the following way:
+be done the following way:
 
         killall conky; conky &
 

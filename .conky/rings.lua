@@ -41,6 +41,7 @@ settings_table = {
         start_angle=-90,
         end_angle=180
     },
+-- You must have Lm sensors installed (and configured), for the temperature ring to work
     {
         name='exec',
         arg='sensors | grep "Core 0:" | cut -d+ -f2 | cut -c1-2',
@@ -69,6 +70,7 @@ settings_table = {
         start_angle=-90,
         end_angle=180
     },
+-- Change the wireless interface below to whatever interface your wireless uses, i.e. wlan0, eth1, ath0, etc
     {
         name='wireless_link_qual_perc',
         arg='eth1',
