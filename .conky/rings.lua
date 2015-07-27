@@ -73,7 +73,7 @@ settings_table = {
 -- Change the wireless interface below to whatever interface your wireless uses, i.e. wlan0, eth1, ath0, etc
     {
         name='wireless_link_qual_perc',
-        arg='eth1',
+        arg='wlan0',
         max=100,
         bg_colour=0xffffff,
         bg_alpha=0.2,
