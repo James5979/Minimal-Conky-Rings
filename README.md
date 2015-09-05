@@ -25,7 +25,7 @@ your wireless card uses.
 Now you can launch Conky normally by typing 'conky &' into your
 terminal window.
 
-Due to the rings.lua script, if you need to restart Conky, it should
+Due to the rings.lua script, if you need to restart Conky it should
 be done the following way:
 
         killall conky; conky &
